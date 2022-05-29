@@ -4,20 +4,13 @@ import { combineReducers, createStore, applyMiddleware } from 'redux'
 import thunkMiddleware from 'redux-thunk'
 import CommonReducer from './reducers/common'
 let store
-
-
 const appReducer = combineReducers({
   NewsReducer:CommonReducer,
 })
 
-
 const rootReducer = (state, action) => {
-    if (action.type == 'LOGOUT_USER') {
-      return appReducer({}, action);
-    }
     return appReducer(state, action);
 }
-
 
 function initStore(initialState) {
   const middleware = [thunkMiddleware]
