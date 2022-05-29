@@ -1,0 +1,22 @@
+.center{
+    text-align: center;
+}
+.main_box{
+    text-align: center;
+    background-color: rgba(33,37,41,1)!important;
+    color: white;
+
+}
+
+.news_box{
+    max-width: 100%;
+    text-align: center;
+    padding: 50px;
+    min-height: 50px;
+    border: 2px solid wheat;
+
+}
+.news_box a{
+    text-decoration: none;
+    color: wheat;
+}
